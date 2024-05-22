@@ -34,5 +34,5 @@
 > ![express](https://img.shields.io/badge/express-000?style=for-the-badge&logo=express&logoColor=fff)
 > - DATABASE  
 > ![mongodb](https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=fff)
-> - SERVER  
+> - INFRA  
 > ![mongodb](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon_aws&logoColor=fff)
