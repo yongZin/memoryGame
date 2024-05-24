@@ -20,7 +20,7 @@
 > - 난수를 활용한 랜덤 카드 정렬
 > - 게임 종료 후 기록과 닉네임을 설정하면 DB에 저장 및 실시간 순위 반영
 > - lazy와 Suspense을 사용하여 Code splitting(스켈레톤 로더 구현)
-> - SCSS를 활용한 애니메이션 효과 및 반응형 UI
+> - styled-components를 활용한 애니메이션 효과 및 반응형 UI
 
 > ### 기술 스택
 > - FRONT  
