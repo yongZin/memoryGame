@@ -2,7 +2,7 @@
 
 > 닉네임과 기록을 저장하여 실시간으로 순위를 확인할 수 있는 같은그림찾기 게임
 
-[🃏 포트폴리오_보러가기](https://port-0-memorygame-otjl2clhzyopb4.sel4.cloudtype.app/)
+<span style="background-color:#fff5b1">[🃏포트폴리오 보러가기](https://port-0-memorygame-otjl2clhzyopb4.sel4.cloudtype.app/)</span>
 
 > 미리 보기
 > ![preview](https://github.com/yongZin/yongZin/blob/main/images/gif/memory_game.gif?raw=true)
