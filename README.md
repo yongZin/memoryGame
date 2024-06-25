@@ -8,7 +8,7 @@
 
 <br>
 
-> 미리 보기
+> ### 미리 보기
 > ![preview](https://github.com/yongZin/yongZin/blob/main/images/gif/memory_game.gif?raw=true)
 
 > ### 주요 기능
