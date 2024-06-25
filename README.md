@@ -2,14 +2,10 @@
 
 > 닉네임과 기록을 저장하여 실시간으로 순위를 확인할 수 있는 같은그림찾기 게임
 
-<a href="https://port-0-memorygame-otjl2clhzyopb4.sel4.cloudtype.app/">
-	<img src="https://img.shields.io/badge/포트폴리오_보러가기►-c98302?style=for-the-badge" />
-</a>
+[🃏 포트폴리오_보러가기](https://port-0-memorygame-otjl2clhzyopb4.sel4.cloudtype.app/)
 
-<details>
-	<summary>포트폴리오 미리보기</summary>
-	<img src="https://github.com/yongZin/yongZin/blob/main/images/gif/memory_game.gif?raw=true" />
-</details>
+> 미리 보기
+> ![preview](https://github.com/yongZin/yongZin/blob/main/images/gif/memory_game.gif?raw=true)
 
 > ### 주요 기능
 > - typescript 활용
@@ -36,3 +32,5 @@
 > ![mongodb](https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=fff)
 > - INFRA  
 > ![mongodb](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon_aws&logoColor=fff)
+
+
