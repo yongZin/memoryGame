@@ -49,6 +49,6 @@
   },
   "proxy": "http://localhost:4001",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   }
 }
