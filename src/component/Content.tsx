@@ -7,7 +7,7 @@ import ResetBtn from './ResetBtn';
 import Record from './Record';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import { setUserRecord, setRank, setMenu } from '../redux/propsSlice';
+import { setUserRecord, setRank, setMenu, setLoading } from '../redux/propsSlice';
 import { RootState } from '../redux/store';
 
 const Wrap = styled.div`
@@ -223,6 +223,39 @@ const Rank = styled.div`
 		}
   }
 `;
+const Loading = styled.ul`
+	display:flex;
+	flex-direction:column;
+	gap:6px;
+	margin-top:10px;
+	padding:10px;
+	text-align:center;
+	li{
+		height:29px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		gap:6px;
+		padding:8px 5px 5px;
+		font-size:1rem;
+		border-radius:6px;
+		color:#fff;
+		background-image:linear-gradient(to right, #0a3c2f 0%, #10795d 20%, #0a3c2f 40%, #0a3c2f 100%);
+				background-size:1000px 104px;
+				animation:skeleton 1s linear infinite forwards;
+		&:before{
+			display:none !important;
+		}
+	}
+	@keyframes skeleton {
+		0%{
+			background-position:-468px 0;
+		}
+		100%{
+			background-position:468px 0;
+		}
+	}
+`;
 
 const Content: React.FC = () => {
 	const dispatch = useDispatch();
@@ -232,6 +265,7 @@ const Content: React.FC = () => {
   const userRecord = useSelector((state: RootState) => state.props.userRecord);
   const resetCount = useSelector((state: RootState) => state.props.resetCount);
   const rank = useSelector((state: RootState) => state.props.rank);
+  const loading = useSelector((state: RootState) => state.props.loading);
 	const recordValue = (record: string) => {
     dispatch(setUserRecord(record));
   };
@@ -239,13 +273,17 @@ const Content: React.FC = () => {
 
 	useEffect(() => {
 		const fetchRankData = async () => {
+			dispatch(setLoading(true));
+
 			try {
 				const res = await axios.get("/api/ranks");
 				const rankData = res.data;
 
 				dispatch(setRank(rankData));
+				dispatch(setLoading(false));
 			} catch (err) {
 				console.error("랭크 데이터 가져오기 실패:", err);
+				dispatch(setLoading(false));
 			}
 		}
 
@@ -279,14 +317,23 @@ const Content: React.FC = () => {
 
 				<Rank className={menu ? "on" : ""}>
 					<h2>순위표</h2>
-					<ul>
-						{rank.map(({ userName, userRecord }, idx) => (
-							<li key={idx}>
-								<span>{userName}</span>
-								<span>{userRecord}</span>
-							</li>
-						))}
-					</ul>
+					{loading ? (
+							<Loading>
+								{Array.from({ length: 5 }).map((_, idx) => (
+									<li key={idx}></li>
+								))}
+							</Loading>
+						) : (
+							<ul>
+								{rank.map(({ userName, userRecord }, idx) => (
+									<li key={idx}>
+										<span>{userName}</span>
+										<span>{userRecord}</span>
+									</li>
+								))}
+							</ul>
+						)
+					}
 				</Rank>
 
 				{finish && !run &&

@@ -133,12 +133,9 @@ const Loading = () => {
 				</ul>
 
 				<ul className='rank'>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					{Array.from({ length: 6 }).map((_, idx) => (
+						<li key={idx}></li>
+					))}
 				</ul>
 			</div>
 		</Skeleton>

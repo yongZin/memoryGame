@@ -23,6 +23,9 @@ const propsSlice = createSlice({
     setMenu: (state, action: PayloadAction<boolean>) => {
       state.menu = action.payload;
     },
+    setLoading: (state, action: PayloadAction<boolean>) => {
+      state.loading = action.payload;
+    },
     resetGame: (state) => {
       state.run = false;
       state.finish = false;
@@ -32,5 +35,5 @@ const propsSlice = createSlice({
   },
 });
 
-export const { setRun, setFinish, setUserRecord, setResetCount, setRank, setMenu, resetGame } = propsSlice.actions;
+export const { setRun, setFinish, setUserRecord, setResetCount, setRank, setMenu, setLoading, resetGame } = propsSlice.actions;
 export default propsSlice.reducer;
