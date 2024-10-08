@@ -4,7 +4,7 @@
 
 <br>
 
-[🕹️ 포트폴리오 보러가기](https://port-0-memorygame-otjl2clhzyopb4.sel4.cloudtype.app/)
+[🕹️ 포트폴리오 보러가기](https://yongzin-memorygame.vercel.app/)
 
 <br>
 
