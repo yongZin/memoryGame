@@ -22,7 +22,44 @@
 > - lazy와 Suspense을 사용하여 Code splitting(스켈레톤 로더 구현)
 > - styled-components를 활용한 애니메이션 효과 및 반응형 UI
 
-> ### 기술 스택
+<br>
+
+<table>
+	<tr>
+		<th colspan="2">기술 스택</th>
+	</tr>
+	<tr>
+		<td>FRONT</td>
+		<td>
+			<img src="https://img.shields.io/badge/react-20232a?style=for-the-badge&logo=react" />
+			<img src="https://img.shields.io/badge/typescript-007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+			<img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=fff" />
+			<img src="https://img.shields.io/badge/axios-804e95?style=for-the-badge" />
+			<img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=ffd35b" />
+		</td>
+	</tr>
+	<tr>
+		<td>BACK</td>
+		<td>
+			<img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=node.js&logoColor=fff" />
+			<img src="https://img.shields.io/badge/express-000?style=for-the-badge&logo=express&logoColor=fff" />
+		</td>
+	</tr>
+	<tr>
+		<td>DATABASE</td>
+		<td>
+			<img src="https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=fff" />
+		</td>
+	</tr>
+	<tr>
+		<td>INFRA</td>
+		<td>
+			<img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon_aws&logoColor=fff" />
+		</td>
+	</tr>
+</table>
+
+<!-- > ### 기술 스택
 > - FRONT  
 > ![react](https://img.shields.io/badge/react-20232a?style=for-the-badge&logo=react)
 > ![typescript](https://img.shields.io/badge/typescript-007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -35,6 +72,6 @@
 > - DATABASE  
 > ![mongodb](https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=fff)
 > - INFRA  
-> ![mongodb](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon_aws&logoColor=fff)
+> ![mongodb](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon_aws&logoColor=fff) -->
 
 
