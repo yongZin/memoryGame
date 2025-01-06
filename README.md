@@ -54,7 +54,7 @@
 	<tr>
 		<td>INFRA</td>
 		<td>
-			<img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon_aws&logoColor=fff" />
+			<img src="https://img.shields.io/badge/Amazon%20S3-232F3E?style=for-the-badge&logo=amazons3&logoColor=white)" />
 		</td>
 	</tr>
 </table>
