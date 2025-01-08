@@ -290,8 +290,10 @@ const Content: React.FC = () => {
 		fetchRankData();
 	}, [dispatch]);
 
-	const menuHandler = () => {
+	const menuHandler = (e: React.MouseEvent) => {
 		// 메뉴버튼 토글 이벤트
+		e.stopPropagation();
+
 		dispatch(setMenu(!menu));
 	}
 	const wrapClickHandler = () => {
